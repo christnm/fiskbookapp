@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Home,
    Main, 
    Faq, 
@@ -17,7 +18,7 @@ import {
  
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{'height': '100vh'}}>
       <Router>
         <Routes>
           <Route path='/'
@@ -39,10 +40,6 @@ function App() {
           element={<ContactUs/>}
           />
         </Routes>
-        
-        
-
-
       </Router>      
     </div>
   );
