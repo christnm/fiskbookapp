@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useState } from "react"
 import { Row, Col, Card, Button, Container} from "react-bootstrap"
 import { MainModal } from "."
@@ -32,6 +32,21 @@ const Main = () =>{
         ])
         
     }
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Host': 'job-search4.p.rapidapi.com',
+            'X-RapidAPI-Key': 'e918046c81msh5eec9c55e10aa92p1c2343jsn62da6a16d0dc'
+        }
+    };
+
+    useEffect(()=>{
+        fetch('https://job-search4.p.rapidapi.com/indeed/search?query=Software%20Engineer%20internship&page=1', options)
+        .then(response => response.json())
+        .then(response => setPosts([response,]))
+    }, [])
+    
+     
 
     return (
         <>
@@ -41,7 +56,7 @@ const Main = () =>{
                     <p>Left</p>
                 </Col>
                 <Col xs={8}>
-                    <h1 style={{fontSize: '50px'}}>Announcements and Opportunities</h1>
+                    <h1 style={{fontSize: '50px', color: '#FFF'}}>Announcements and Opportunities</h1>
                     <MainModal onPost={addPost}/>
                     {posts.reverse().map(co => (
                         <Card style={{ width: '100%', heigth: '30rem', backgroundColor: '#A9B0AC', marginBottom: '1rem' }}>
