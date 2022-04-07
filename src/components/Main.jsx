@@ -59,9 +59,9 @@ const Main = () =>{
         <>
         <Container fluid style={{'margin': '0', 'height': '100%', 'padding': '0'}}>
             <Row style={{'height': '100%', 'margin': '0'}}>
-                <Col xs={2} style={{'backgroundColor':'#000'}}>
+                {/* <Col xs={2} style={{'backgroundColor':'#FFF'}}>
                     <p>Left</p>
-                </Col>
+                </Col> */}
                 <Col xs={8}>
                     <h1 style={{fontSize: '50px', color: '#FFF'}}>Announcements and Opportunities</h1>
                     <MainModal onPost={addPost}/>
@@ -79,9 +79,9 @@ const Main = () =>{
 
                     ))}
                 </Col>
-                <Col xs={2} style={{'backgroundColor':'#000'}} >
+                {/* <Col xs={2} style={{'backgroundColor':'#000'}} >
                     <p>Right</p>
-                </Col>
+                </Col> */}
             </Row>
         </Container>
         
