@@ -19,7 +19,7 @@ const Home = () => {
                 <hr />
 
                 <div class="container-2">
-                    <button type="button" class="btnH btn-posts">Posts</button>
+                    <button type="button" class="btnH btn-posts" href='/main'>Posts</button>
                     <button type="button" class="btnH btn-secondary">About Us</button>
                     <button type="button" class="btnH btn-success">Bookmarks</button>
                     <button type="button" class="btnH btn-danger">Contact Us</button>
