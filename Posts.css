@@ -1,0 +1,238 @@
+/* .connection{
+    text-align: center;
+    font-size:20px;
+    font-weight: bolder;
+    color: red;
+    animation-name: connection;
+    animation-duration: 30s;
+}
+.connection:hover{
+    text-decoration:underline;
+}
+  
+@keyframes connection {
+    0%   {color: red;}
+    15%  {color: yellow;}
+    30%  {color: #2A56DF;}
+    45% {color: green;}
+    60% {color:#866D4B;}
+    75% {color: orange;}
+    90% {color: purple;}
+    100% {color: indigo;}
+}
+
+.end-part{
+    background-color:#9fa8a3;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+.fa:hover {
+    opacity: 1;
+}
+  
+.fa-facebook {
+    background: #866D4B;
+    color: white;
+}
+  
+.fa-instagram {
+    background: #866D4B;
+    color: white;
+}
+
+.fa-youtube {
+    background: #2A56DF;
+    color: white;
+}
+
+.fa-facebook:hover {
+    background: #A31F34;
+    color: #8a3ab9;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+.fa-instagram:hover {
+    background: #A31F34;
+    color: #8a3ab9;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fa-youtube:hover {
+    background: #A31F34;
+    color: #8a3ab9;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} */
+
+body{
+    background-image: url("https://www.fisk.edu/wp-content/uploads/2020/04/DSC3914-edited-Pixlr-1024x683.jpg");
+    background-size:cover;
+    min-height:1000px;
+}
+
+.container-1{
+    height:320px;
+}
+.img-container{
+    width:500px;
+    height:300px;
+}
+
+.img{
+    height:200px;
+    width:300px;
+    border-radius:20px;
+    margin-left:100px;
+    margin-top:20px;
+}
+
+.main-name-container{
+    margin-left:880px;
+    margin-top:-290px;
+}
+
+.main-name-container h1{
+    color:wheat;
+    font-size:50px;
+    margin-left:123px;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+}
+
+.main-name-container p{
+    font-size:24px;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    color:wheat;
+    text-align:center;
+    margin-left:62px;
+}
+
+.a{
+    color:#866D4B;
+    font-size:30px;
+}
+
+/* .hr1{
+    margin-top:150px;
+} */
+
+.btn{
+    background-color:#2A56DF;
+    color:wheat;
+    font-weight:bolder;
+    font-size:15px;
+    height:40px;
+    width:130px;
+    margin:auto;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+    display:inline-block;
+    transition: background-color 0.5s ease-out 100ms;
+    margin-top:-70px;
+    text-decoration: none;
+}
+
+.btn:visited{
+    text-decoration: none;
+    color:wheat;
+
+}
+
+
+/* 
+.btn{
+    background-color: #2A56DF; /* Green background */
+    /* border: none; /* Green border */
+    /* color: #866D4B; /* White text */
+    /* Some padding */
+    /* cursor: pointer; Pointer/hand icon */
+    /* border-radius:6px; */
+    /* width: 50%; Set a width if needed */
+    /* display: block; Make the buttons appear below each other */
+    /* transition: background-color 0.5s ease-out 100ms
+} */ 
+
+
+.btn:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+.container-2{
+    display:flex;
+    justify-content:right;
+    flex-wrap:column-wrap;
+}
+.btn:hover{
+    color: #2A56DF;
+    background-color:wheat; 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/* .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+   */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover{
+    background-color: #ddd;
+}
+  
+.show{
+    display: block;
+}
+
+.form-control .btns{
+    align-items: center;
+}
+.container-1{
+    text-align:center;
+}
+
+#btn-search{
+    width:100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

@@ -1,0 +1,94 @@
+[{
+    "post":[
+        {
+            "post_num" : 1,
+            "images" : "Rocket.jfif",
+            "name" : "Rocket Team (FAAMT)",
+            "by" : "Physics Department",
+            "on" : "03/29/2022",
+            "detail": "Science Enthusiasts can have hands-on learning experience in Physics building the rocket."
+        },
+        {
+            "post_num" : 2,
+            "images" : "Google.jfif",
+            "name" : "Google STEP Internship",
+            "by" : "Google",
+            "on" : "03/29/2022",
+            "detail": "Computer Enthusiasts can hone their coding skills by interning at Google Company."
+        },
+        {
+            "post_num" : 3,
+            "images" : "Equinix.png",
+            "name" : "Equinix Internship",
+            "by" : "Equinix",
+            "on" : "04/01/2022",
+            "detail": "Grab the opportunity to work in the real world and show your potential through the internship at equinix."
+        },
+        {
+            "post_num" : 4,
+            "images" : "Computer.jfif",
+            "name" : "Fisk CS Club",
+            "by" : "Computer Science Department",
+            "on" : "02/22/2022",
+            "detail": "Come, meet your CS friends, work, learn, engage together and develop your CS skills."
+        },
+        {
+            "post_num" : 5,
+            "images" : "Library.png",
+            "name" : "Library Volunteering",
+            "by" : "Fisk University Library",
+            "on" : "11/29/2021",
+            "detail": "Want to volunteer and ear a little? Consider volunteering at Fisk University Library. Serve the people around you."
+        },
+        {
+            "post_num" : 6,
+            "images" : "Professional_Development.jfif",
+            "name" : "F.E.L.P",
+            "by" : "Office of Career Planning and Development",
+            "on" : "03/01/2022",
+            "detail": "F.E.L.P. is your place if you want to develop your professional personality and wish to pursue an internship in the summer."
+        },
+        {
+            "post_num" : 7,
+            "images" : "Books.jfif",
+            "name" : "Study at Vanderbilt, Meharry, or Belmont!",
+            "by" : "Fisk University Registrar's Office",
+            "on" : "03/20.2022",
+            "detail": "Hurry up and cross register to study at Vanderbilt or Meharry or Belmont. Seats are filling up."
+        },
+        {
+            "post_num" : 8,
+            "images" : "Bank_Of_America.png",
+            "name" : "Global Technology Freshman Summer Analyst",
+            "by" : "Bank of America",
+            "on" : "08/22/2021",
+            "detail": "become a summer analyst at BoA. We want you. Apply soon!"
+        },
+        {
+            "post_num" : 9,
+            "images" : "Research.jfif",
+            "name" : "Research Opportunities for Biology Majors",
+            "by" : "Massachusetts Institute of Technology",
+            "on" : "01/01/2022",
+            "detail": "Biology students will get hands-on academic and research engagement in cutting-edge medical practices."
+        },
+        {
+            "post_num" : 10,
+            "images" : "UNCF.png",
+            "name" : "UNCF Scholarship Award",
+            "by" : "UNCF",
+            "on" : "01/01/2021",
+            "detail": "Financially incapable students are welcome to apply to UNCF scholarship this semester."
+        },
+        {
+            "post_num" : 11,
+            "images" : "Harvard.png",
+            "name" : "MBA at Harvard",
+            "by" : "Harvard University",
+            "on" : "10/10/2022",
+            "detail": "Attention seniors majoring in Business. Consider applying to Harvard Business School for your higher studies after Fisk."
+        }
+           
+    ]
+}
+]
