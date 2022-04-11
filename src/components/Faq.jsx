@@ -34,7 +34,6 @@ const Faq = () => {
                     <p>Send us a message in our contact us form.</p>
                 </div>
             </div>
-            <script src="Faq.js"></script>
         </body>
     )
 }

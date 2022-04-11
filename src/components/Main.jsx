@@ -58,16 +58,15 @@ const Main = () =>{
     return (
         <>
         <Container fluid style={{'margin': '0', 'height': '100%', 'padding': '0'}}>
-            <Row style={{'height': '100%', 'margin': '0'}}>
-                {/* <Col xs={2} style={{'backgroundColor':'#FFF'}}>
-                    <p>Left</p>
-                </Col> */}
-                <Col xs={8}>
+            <Row className="text-center" style={{'height': '100%', 'margin': '0'}}>
+                <Col xs={3} >
+                </Col>
+                <Col  md>
                     <h1 style={{fontSize: '50px', color: '#FFF'}}>Announcements and Opportunities</h1>
                     <MainModal onPost={addPost}/>
                     {posts.reverse().map(co => (
                         <Card style={{ width: '100%', heigth: '30rem', backgroundColor: '#A9B0AC', marginBottom: '1rem' }}>
-                        <Card.Img variant="top" src={co.picture} style={{width:'150px', left:'43%', position: 'relative', marginTop: '1rem'}}/>
+                        <Card.Img variant="top" src={co.picture}  style={{width:'150px',left:'40%', position: 'relative', marginTop: '1rem'}}/>
                         <Card.Body>
                           <Card.Title>{co.title}</Card.Title>
                           <Card.Text>
@@ -79,9 +78,9 @@ const Main = () =>{
 
                     ))}
                 </Col>
-                {/* <Col xs={2} style={{'backgroundColor':'#000'}} >
-                    <p>Right</p>
-                </Col> */}
+                <Col xs={3}>
+                    
+                </Col>
             </Row>
         </Container>
         
