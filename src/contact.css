@@ -140,7 +140,7 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 40px 0;
-    font-family:Snell Roundhand, cursive;
+    font-family:'Comic Sans MS';
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -154,7 +154,7 @@ body {
     padding: 40px;
     position: relative;
     max-width: 840px;
-    height:300px;
+    height:350px;
     background-color:#24364C;
   }
     

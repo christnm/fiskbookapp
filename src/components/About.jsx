@@ -39,9 +39,9 @@ const About = () =>{
                   <div class="member_img">
                      <img src={awantika} alt="our_team"/>
                     <div class="social_media">
-                       <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
-                       <div class="twitter item"><i class="fab fa-twitter"></i></div>
-                       <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                        <a href='https://facebook.com/'><SocialIcon  network="facebook"  ></SocialIcon> </a>
+                        <a href='https://twitter.com/'><SocialIcon  network="twitter"  ></SocialIcon></a>
+                        <a href='https://instagram.com/'><SocialIcon network="instagram" ></SocialIcon></a>
                      </div>
                   </div>
                   <h3>Awantika Bastola</h3>
@@ -52,9 +52,9 @@ const About = () =>{
                    <div class="member_img">
                      <img src={christian} alt="our_team"/>
                      <div class="social_media">
-                       <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
-                       <div class="twitter item"><i class="fab fa-twitter"></i></div>
-                       <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                        <a href='https://facebook.com/'><SocialIcon  network="facebook"  ></SocialIcon> </a>
+                        <a href='https://twitter.com/'><SocialIcon  network="twitter"  ></SocialIcon></a>
+                        <a href='https://instagram.com/'><SocialIcon network="instagram" ></SocialIcon></a>
                      </div>
                   </div>
                   <h3>Christian Morales</h3>
@@ -65,9 +65,9 @@ const About = () =>{
                    <div class="member_img">
                      <img src={rasneet} alt="our_team"/>
                      <div class="social_media">
-                       <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
-                       <div class="twitter item"><i class="fab fa-twitter"></i></div>
-                       <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                        <a href='https://facebook.com/'><SocialIcon  network="facebook"  ></SocialIcon> </a>
+                        <a href='https://twitter.com/'><SocialIcon  network="twitter"  ></SocialIcon></a>
+                        <a href='https://instagram.com/'><SocialIcon network="instagram" ></SocialIcon></a>
                      </div>
                   </div>
                   <h3>Rasneet Singh</h3>
@@ -78,9 +78,11 @@ const About = () =>{
                    <div class="member_img">
                      <img src={rejin} alt="our_team"/>
                      <div class="social_media">
-                       <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
-                       <div class="twitter item"><i class="fab fa-twitter"></i></div>
-                       <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                        <a href='https://facebook.com/rejinnepal1'><SocialIcon  network="facebook"  ></SocialIcon> </a>
+                        <a href='https://twitter.com/rejinnepal'><SocialIcon  network="twitter"  ></SocialIcon></a>
+                        <a href='https://instagram.com/rejinnepal'><SocialIcon network="instagram" ></SocialIcon></a>
+                     
+                       
                      </div>
                   </div>
                   <h3>Rejin Nepal</h3>

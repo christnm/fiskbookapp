@@ -21,7 +21,7 @@ const Home = () => {
 
     return (
         <>
-            <body>
+            <body className='homeback'>
                 <br /><br />
                 <div className="text-opp">
                     <h1>Our Offerings</h1>
@@ -87,11 +87,7 @@ const Home = () => {
                 <div className="end-part">
                     <div>
                         <div className="connection">Connect with us SOCIALLY!!</div>
-                    </div>
-                </div>
-
-                <footer className="social-footer">
-                    <div className="social-icons">
+                        <div className="social-icons">
                         <a href="https://youtube.com">
                             <SocialIcon  network="youtube" ></SocialIcon>
                         </a>
@@ -103,8 +99,12 @@ const Home = () => {
                         <a href="https://instagram.com">
                             <SocialIcon network="instagram" ></SocialIcon>
                         </a>
-                        
                     </div>
+                    </div>
+                </div>
+
+                <footer className="social-footer">
+                    
                 </footer>
 
                 <footer>

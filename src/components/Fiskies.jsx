@@ -53,7 +53,7 @@ const Fiskies = () => {
             <body >
 
 
-                <h1 id="first">Latest Advice From Our Students</h1>
+                <h1 style={{marginTop: '70px'}} id="first">Latest Advice From Our Students</h1>
 
                 <p id="second"> Want to advice people who look up to you? Contact Us.</p>
 

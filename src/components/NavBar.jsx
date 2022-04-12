@@ -27,10 +27,10 @@ const NavBar = () => {
   if (location.pathname === '/fiskies') {
     activeFiskies = true
   }
-  if (location.pathname === '/faq') {
+  if (location.pathname === '/Faq') {
     activeFaq = true
   }
-  if (location.pathname === '/contactus') {
+  if (location.pathname === '/contactUs') {
     activeCont = true
   }
     return (
