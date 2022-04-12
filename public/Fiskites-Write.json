@@ -1,10 +1,10 @@
 [{
-    image: "http://data.iymc.info/ambassadors/cropped_1599062068.2237_picture.png",
-    name: "Study Hard",
-    num: 1,
-    by: "Rejin Nepal",
-    on: "04/01/2022", 
-    advice: "Study hard to get along with your life."
+    "image": "http://data.iymc.info/ambassadors/cropped_1599062068.2237_picture.png",
+    "name": "Study Hard",
+    "num": 1,
+    "by": "Rejin Nepal",
+    "on": "04/01/2022", 
+    "advice": "Study hard to get along with your life."
 },
 {
     "image": "https://github.com/christnm/fiskbookapp/blob/rasneet/public/christian.jpg?raw=true",
