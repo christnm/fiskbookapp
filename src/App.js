@@ -5,7 +5,8 @@ import { Home,
    Main, 
    Faq, 
    About, 
-   Bookmarks,
+   Fiskies,
+   NavBar,
    ContactUs
   } from './components'
   
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App" style={{'height': '100vh'}}>
       <Router>
+        <NavBar/>
         <Routes>
           <Route path='/'
           element={<Home/>}
@@ -34,8 +36,8 @@ function App() {
           <Route path='/about'
           element={<About/>}
           />
-          <Route path='/bookmarks'
-          element={<Bookmarks/>}
+          <Route path='/fiskies'
+          element={<Fiskies/>}
           />
           <Route path='/contactUs'
           element={<ContactUs/>}

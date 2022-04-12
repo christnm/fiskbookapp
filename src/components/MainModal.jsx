@@ -11,6 +11,7 @@ const MainModal = ({onPost}) => {
     const [description, setDescription] = useState('')
     const [logoLink, setLogoLink] = useState('')
     const [siteLink, setSiteLink] = useState('')
+    const [author, setAuthor] = useState('')
 
 
     const handleTitleInput = (e) => {
@@ -25,10 +26,14 @@ const MainModal = ({onPost}) => {
     const handleLinkInput = (e) => {
         setSiteLink(e.target.value)
         }
+    const handleAuthorInput = (e) =>{
+      setAuthor(e.target.value)
+      
+    }
 
     const handlePost = () => {
         handleClose()
-        onPost(title, description, logoLink, siteLink)
+        onPost(title, author, description, logoLink, siteLink)
         }
 return (
   <>
@@ -43,6 +48,10 @@ return (
         <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Title</Form.Label>
             <Form.Control type="email" placeholder="Enter title" onChange={handleTitleInput} />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Author</Form.Label>
+            <Form.Control placeholder="Enter name of Author" onChange={handleAuthorInput} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicDescription">
             <Form.Label>Description</Form.Label>

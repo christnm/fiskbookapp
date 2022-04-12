@@ -1,40 +1,85 @@
-import '../Faq/Faq.js'
+
 import '../Faq/faq.css'
+import {Accordion} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import {NavBar} from '../components'
+
 
 const Faq = () => {
+    
     return (
-        <body>
-            <div class="Container">
-                <div class="UpperContainer">
-                    <div class="ask">
-                        <h2 id="help">How can we help you?</h2>
-                        <button type="button" id="button">Contact Us</button>
+        <>
+            <body> 
+                <div className="Container">
+                    <div className="UpperContainer">
+                        <div className="ask">
+                            <h2 id="help">How can we help you?</h2>
+                            <Link to='/contactus'>
+                                <button type="button" id="button1" >CONTACT US</button>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="LowerContainer">
+                        <Accordion defaultActiveKey="0">
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>What should we include in our posts?</Accordion.Header>
+                                <Accordion.Body>
+                                The posts should include brief information of the program along with application deadline for internships and event date for events.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>Can only Fisk students apply?</Accordion.Header>
+                                <Accordion.Body>
+                                No the information provided is open to everyone.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="2">
+                                <Accordion.Header>Does applying guarantee an acceptance?</Accordion.Header>
+                                <Accordion.Body>
+                                No, it does not. Our role is just to compile the available opportunities.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="3">
+                                <Accordion.Header>When is the right time to apply?</Accordion.Header>
+                                <Accordion.Body>
+                                There is no such right time to apply as long as it is before the deadline, but the earlier the better.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="4">
+                                <Accordion.Header>How can I get in touch with you?</Accordion.Header>
+                                <Accordion.Body>
+                                Send us a message in our contact us form.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
                     </div>
                 </div>
-                <div class="LowerContainer">
+                <br /><br />
+
+                <div className="end-part">
+                    <div className="connection">Connect with us SOCIALLY !!! </div>
+
+                    <footer className="social-footer">
+                        <div className="social-icons">
+                            <a href="#" className="fa fa-facebook"></a>
+                            <a href="#" className="fa fa-youtube"></a>
+                            <a href="#" className="fa fa-instagram"></a>
+                        </div>
+                    </footer>
+
+                    <footer>
+                        <p className="cr">© FiskBook 2022</p>
+                    </footer>
                 </div>
-                <button type="button" class="collapsible" >What should we include in our posts?</button>
-                <div class="content">
-                    <p>The posts should include brief information of the program along with application deadline for internships and event date for events.</p>
-                </div>
-                <button type="button" class="collapsible">Can only Fisk students apply?</button>
-                <div class="content">
-                    <p>No the information provided is open to everyone.</p>
-                </div>
-                <button type="button" class="collapsible">Does applying guarantee an acceptance?</button>
-                <div class="content">
-                    <p>No, it does not. Our role is just to compile the available opportunities.</p>
-                </div>
-                <button type="button" class="collapsible">When is the right time to apply?</button>
-                <div class="content">
-                    <p>There is no such right time to apply as long as it is before the deadline, but the earlier the better.</p>
-                </div>
-                <button type="button" class="collapsible">How can I get in touch with you?</button>
-                <div class="content">
-                    <p>Send us a message in our contact us form.</p>
-                </div>
-            </div>
-        </body>
+                {/* <!-- for container --> */}
+
+                {/* <!-- <div class="ContactUs">
+    <h1>Has something not been adressed?</h1>
+    <button type="button"><i class="contact">Contact Us</i></button>
+</div> --> */}
+
+            </body >
+        </>
     )
 }
 

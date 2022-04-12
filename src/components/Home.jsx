@@ -1,65 +1,109 @@
+
 import '../HomeF/Home.css'
+import GradPic from '../Pictures/Gradschool.jpg'
+import Mentorship from '../Pictures/Mentorship.jpg'
+import Research from '../Pictures/Research.jpg'
+import StudyAbroad from '../Pictures/Study-Abroad.png'
+import Scholarship from '../Pictures/Scholarship.jpg'
+import Internship from '../Pictures/Internship.jpg'
+import Hackathon from '../Pictures/Hackathon.jfif'
+import OnCampus from '../Pictures/On-Campus.jfif'
+import { Carousel } from 'react-bootstrap'
+import { useState } from 'react'
 
 const Home = () => {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+    };
 
     return (
-        <div>
+        <>
             <body>
-
-                <div class="container-1">
-                    <div class="img-container">
-                        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFDKpuRDEVtzuIA4UzRcwoCT4HCoFSB1zEA&usqp=CAU" />
-                    </div>
-                    <div class="main-name-container">
-                        <p className="p-class">FiskBook</p>
-                        <p class="a" className="p-class">... in service of students, always</p>
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="container-2">
-                    <button type="button" class="btnH btn-posts" href='/main'>Posts</button>
-                    <button type="button" class="btnH btn-secondary">About Us</button>
-                    <button type="button" class="btnH btn-success">Bookmarks</button>
-                    <button type="button" class="btnH btn-danger">Contact Us</button>
-                    <button type="button" class="btnH btn-warning">FAQs</button>
-                </div>
-
-                <hr />
                 <br /><br />
+                <div className="text-opp">
+                    <h1>Our Offerings</h1>
+                </div>
+                <Carousel activeIndex={index} onSelect={handleSelect}>
 
+                    <Carousel.Item>
+                        
+                        <img src={Scholarship} height="350px" style={{width:"50%"}} alt="" />
+                        <Carousel.Caption style={{color:'#F4BA1B', fontWeight:'bolder'}}>Scholarships</Carousel.Caption>
+                    </Carousel.Item>
 
-                <div class="container-3">
+                    <Carousel.Item>
+                        
+                        <img src={Research} height="350px" style={{width:"50%"}} alt="" />
+                        <Carousel.Caption style={{color:'#F4BA1B', fontWeight:'bolder'}}>Research</Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                       
+                        <img src={GradPic} height="350px" style={{width:"50%"}} alt="" />
+                        <Carousel.Caption style={{color:'#F4BA1B', fontWeight:'bolder'}}>Graduation</Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        
+                        <img src={Internship} height="350px" style={{width:"50%"}} alt="" />
+                        <Carousel.Caption style={{color:'#F4BA1B', fontWeight:'bolder'}}>Internship</Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <Carousel.Caption style={{color:'#F4BA1B', fontWeight:'bolder'}}>Mentorship</Carousel.Caption>
+                        <img src={Mentorship} height="350px" style={{width:"50%"}} alt="" />
+                    </Carousel.Item>
+                    
+                    <Carousel.Item>
+                    <Carousel.Caption style={{color:'#F4BA1B', fontWeight:'bolder'}}>Hackathon</Carousel.Caption>
+                        <img src={Hackathon} height="350px" style={{width:"50%"}} alt="" />
+                        
+                    </Carousel.Item>
+
+                    <Carousel.Item >
+                    <Carousel.Caption style={{color:'#F4BA1B', fontWeight:'bolder'}}>Study Abroad</Carousel.Caption>
+                        <img src={StudyAbroad} height="350px" style={{width:"50%"}} alt="" />
+                        
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <Carousel.Caption style={{color:'#F4BA1B', fontWeight:'bolder'}}>On Campus Job Opportunities</Carousel.Caption>
+                        <img src={OnCampus} height="350px" style={{width:"50%"}} alt="" />
+                        
+                    </Carousel.Item>
+                </Carousel>
+
+                <br /><br />
+                <div className="container-3">
                     <div id="about-fiskbook">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        FiskBook is a website created by the students of Fisk University to make different available opportunities spread among the Fisk University with an intention of whole school participation in the opportunities. The creators of FiskBook are Awantika Bastola, Christian Morales, Rasneet Singh, and Rejin Nepal.
                     </div>
                 </div>
 
                 <br /><br />
 
-                <hr />
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-google"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-pinterest"></i>
-                <i class="fab fa-vk"></i>
-                <i class="fab fa-stack-overflow"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-slack-hash"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-dribbble"></i>
-                <i class="fab fa-reddit-alien"></i>
-                <i class="fab fa-whatsapp"></i>
+                <div className="end-part">
+                    <div>
+                        <div className="connection">Connect with us SOCIALLY!!</div>
+                    </div>
+                </div>
+
+                <footer className="social-footer">
+                    <div className="social-icons">
+                        <a href="https://facebook.com" className="fa fa-facebook"></a>
+                        <a href="https://youtube.com" className="fa fa-youtube"></a>
+                        <a href="https://instagram.com" className="fa fa-instagram"></a>
+                    </div>
+                </footer>
+
+                <footer>
+                    <p className="cr">© FiskBook 2022</p>
+                </footer>
+
             </body>
-        </div>
+        </>
+
     )
 }
 
