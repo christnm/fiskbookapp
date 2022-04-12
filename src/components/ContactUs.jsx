@@ -1,5 +1,6 @@
 import '../contact.css'
 import { Button, Form } from 'react-bootstrap'
+import { SocialIcon } from 'react-social-icons'
 
 const ContactUs = () => {
     return (
@@ -13,9 +14,9 @@ const ContactUs = () => {
 
                     <Form id="contact-form" class="form-horizontal" role="form">
 
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Group  className="mb-3" controlId="formBasicEmail">
                             
-                            <Form.Control  placeholder="Enter full name" />
+                            <Form.Control style={{marginTop: '-30px'}}  placeholder="Enter full name" />
                         </Form.Group>
                         
 
@@ -23,13 +24,11 @@ const ContactUs = () => {
                             
                             <Form.Control type="email" placeholder="Enter email" />
                         </Form.Group>
-                        
-
-
-                        <textarea class="form-control message" rows="10" placeholder="Write your Message Here..." name="message" required></textarea>
+   
+                        <textarea  class="form-control message" rows="10" placeholder="Write your Message Here..." name="message" required></textarea>
                         <br />
 
-                        <Button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                        <Button style={{marginTop: '-10px'}} class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                             SEND
                         </Button>
 
@@ -54,6 +53,22 @@ const ContactUs = () => {
                 </div>
                 <div class="end-part">
                     <div class="connection">Connect with us SOCIALLY !!! </div>
+
+                    <footer class="social-footer">
+                    <div className="social-icons">
+                        <a href="https://youtube.com">
+                            <SocialIcon  network="youtube" ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://facebook.com">
+                            <SocialIcon  network="facebook"  ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://instagram.com">
+                            <SocialIcon network="instagram" ></SocialIcon>
+                        </a>
+                    </div>
+                    </footer>
 
                     <footer>
                         <p class="cr">© FiskBook 2022</p>

@@ -9,6 +9,7 @@ import Internship from '../Pictures/Internship.jpg'
 import Hackathon from '../Pictures/Hackathon.jfif'
 import OnCampus from '../Pictures/On-Campus.jfif'
 import { Carousel } from 'react-bootstrap'
+import { SocialIcon } from 'react-social-icons';
 import { useState } from 'react'
 
 const Home = () => {
@@ -91,9 +92,18 @@ const Home = () => {
 
                 <footer className="social-footer">
                     <div className="social-icons">
-                        <a href="https://facebook.com" className="fa fa-facebook"></a>
-                        <a href="https://youtube.com" className="fa fa-youtube"></a>
-                        <a href="https://instagram.com" className="fa fa-instagram"></a>
+                        <a href="https://youtube.com">
+                            <SocialIcon  network="youtube" ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://facebook.com">
+                            <SocialIcon  network="facebook"  ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://instagram.com">
+                            <SocialIcon network="instagram" ></SocialIcon>
+                        </a>
+                        
                     </div>
                 </footer>
 

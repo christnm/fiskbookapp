@@ -2,7 +2,8 @@
 import '../Faq/faq.css'
 import {Accordion} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import {NavBar} from '../components'
+import { SocialIcon } from 'react-social-icons'
+
 
 
 const Faq = () => {
@@ -59,15 +60,20 @@ const Faq = () => {
                 <div className="end-part">
                     <div className="connection">Connect with us SOCIALLY !!! </div>
 
-                    <footer className="social-footer">
-                        <div className="social-icons">
-                            <a href="#" className="fa fa-facebook"></a>
-                            <a href="#" className="fa fa-youtube"></a>
-                            <a href="#" className="fa fa-instagram"></a>
-                        </div>
-                    </footer>
-
                     <footer>
+                    <div className="social-icons">
+                        <a href="https://youtube.com">
+                            <SocialIcon  network="youtube" ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://facebook.com">
+                            <SocialIcon  network="facebook"  ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://instagram.com">
+                            <SocialIcon network="instagram" ></SocialIcon>
+                        </a>
+                    </div>
                         <p className="cr">© FiskBook 2022</p>
                     </footer>
                 </div>

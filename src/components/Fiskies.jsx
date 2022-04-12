@@ -1,6 +1,7 @@
 import '../Fiskies.css'
 import { useState, useEffect} from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
+import { SocialIcon } from 'react-social-icons';
 
 
 
@@ -86,60 +87,7 @@ const Fiskies = () => {
 
                     ))}
                 </Row>
-                {/* <div class="container mt-4">
-                    
-
-                   {/* <div id="superhero-grid" class="row row-cols-1 row-cols-md-4 g-4 mt-4">
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Advice 1 Title</h5>
-                                    <p class="card-by">Adviced by: </p>
-                                    <p class="card-on">Adviced on: </p>
-                                    <p class="card-text">Advice...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Advice 2 Title</h5>
-                                    <p class="card-by">Adviced by: </p>
-                                    <p class="card-on">Adviced on: </p>
-                                    <p class="card-text">Advice...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Advice 2 Title</h5>
-                                    <p class="card-by">Adviced by: </p>
-                                    <p class="card-on">Adviced on: </p>
-                                    <p class="card-text">Advice...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Advice 2 Title</h5>
-                                    <p class="card-by">Adviced by: </p>
-                                    <p class="card-on">Adviced on: </p>
-                                    <p class="card-text">Advice...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                
 
                 <br /><br /><br />
 
@@ -147,11 +95,19 @@ const Fiskies = () => {
                     <div class="connection">Connect with us SOCIALLY !!! </div>
 
                     <footer class="social-footer">
-                        <div class="social-icons">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-youtube"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                        </div>
+                    <div className="social-icons">
+                        <a href="https://youtube.com">
+                            <SocialIcon  network="youtube" ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://facebook.com">
+                            <SocialIcon  network="facebook"  ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://instagram.com">
+                            <SocialIcon network="instagram" ></SocialIcon>
+                        </a>
+                    </div>
                     </footer>
 
                     <footer>

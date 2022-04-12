@@ -3,6 +3,7 @@ import awantika from '../AboutUs/awantika.jpg'
 import christian from '../AboutUs/christian.jpg'
 import rejin from '../AboutUs/rejin.jpg'
 import rasneet from '../AboutUs/myself.jpg'
+import { SocialIcon } from 'react-social-icons'
 
 
 const About = () =>{
@@ -91,11 +92,28 @@ const About = () =>{
         <br/><br/><br/>
         
         <div class="end-part">
-            <div class="connection">Connect with us SOCIALLY!!! </div>
-            <footer>
-                <p class="cr">© FiskBook 2022</p>
-            </footer>
-        </div>
+                    <div class="connection">Connect with us SOCIALLY !!! </div>
+
+                    <footer class="social-footer">
+                    <div className="social-icons">
+                        <a href="https://youtube.com">
+                            <SocialIcon  network="youtube" ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://facebook.com">
+                            <SocialIcon  network="facebook"  ></SocialIcon>
+                        </a>
+                        
+                        <a href="https://instagram.com">
+                            <SocialIcon network="instagram" ></SocialIcon>
+                        </a>
+                    </div>
+                    </footer>
+
+                    <footer>
+                        <p class="cr">© FiskBook 2022</p>
+                    </footer>
+                </div>
   
     </body>
     )
