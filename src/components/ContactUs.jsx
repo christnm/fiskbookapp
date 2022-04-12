@@ -15,7 +15,7 @@ const ContactUs = () => {
 
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             
-                            <Form.Control type="email" placeholder="Enter full name" />
+                            <Form.Control  placeholder="Enter full name" />
                         </Form.Group>
                         
 
