@@ -1,3 +1,9 @@
+# Install Bootstrap, React-dom, and React Icons by running the following lines:
+
+* npm install react-bootstrap bootstrap
+* npm install react react-dom
+* npm install react-social-icons
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
